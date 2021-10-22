@@ -13,6 +13,10 @@
 		0410266727217A0E00870EC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0410266527217A0E00870EC1 /* Main.storyboard */; };
 		0410266927217A1300870EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0410266827217A1300870EC1 /* Assets.xcassets */; };
 		0410266C27217A1300870EC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0410266A27217A1300870EC1 /* LaunchScreen.storyboard */; };
+		0410267927217EF200870EC1 /* MatchInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410267827217EF200870EC1 /* MatchInfoModel.swift */; };
+		0410267B272180E400870EC1 /* MatchLinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410267A272180E400870EC1 /* MatchLinkModel.swift */; };
+		0410267D2721854F00870EC1 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410267C2721854F00870EC1 /* Presenter.swift */; };
+		041026802722917800870EC1 /* SendModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410267F2722917700870EC1 /* SendModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		0410266827217A1300870EC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0410266B27217A1300870EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0410266D27217A1300870EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0410267827217EF200870EC1 /* MatchInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchInfoModel.swift; sourceTree = "<group>"; };
+		0410267A272180E400870EC1 /* MatchLinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchLinkModel.swift; sourceTree = "<group>"; };
+		0410267C2721854F00870EC1 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		0410267F2722917700870EC1 /* SendModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		0410265E27217A0E00870EC1 /* MyFootballApp */ = {
 			isa = PBXGroup;
 			children = (
+				0410267527217DE400870EC1 /* Presenters */,
+				0410267427217DD800870EC1 /* Views */,
+				0410267327217DCC00870EC1 /* Models */,
 				0410265F27217A0E00870EC1 /* AppDelegate.swift */,
 				0410266127217A0E00870EC1 /* SceneDelegate.swift */,
-				0410266327217A0E00870EC1 /* ViewController.swift */,
 				0410266527217A0E00870EC1 /* Main.storyboard */,
 				0410266827217A1300870EC1 /* Assets.xcassets */,
 				0410266A27217A1300870EC1 /* LaunchScreen.storyboard */,
 				0410266D27217A1300870EC1 /* Info.plist */,
 			);
 			path = MyFootballApp;
+			sourceTree = "<group>";
+		};
+		0410267327217DCC00870EC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0410267827217EF200870EC1 /* MatchInfoModel.swift */,
+				0410267A272180E400870EC1 /* MatchLinkModel.swift */,
+				0410267F2722917700870EC1 /* SendModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0410267427217DD800870EC1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0410266327217A0E00870EC1 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0410267527217DE400870EC1 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				0410267C2721854F00870EC1 /* Presenter.swift */,
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +174,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0410266427217A0E00870EC1 /* ViewController.swift in Sources */,
+				0410267D2721854F00870EC1 /* Presenter.swift in Sources */,
 				0410266027217A0E00870EC1 /* AppDelegate.swift in Sources */,
+				0410267927217EF200870EC1 /* MatchInfoModel.swift in Sources */,
 				0410266227217A0E00870EC1 /* SceneDelegate.swift in Sources */,
+				041026802722917800870EC1 /* SendModels.swift in Sources */,
+				0410267B272180E400870EC1 /* MatchLinkModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
